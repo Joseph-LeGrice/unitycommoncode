@@ -1,0 +1,17 @@
+{
+    "name": "joe.commoncode",
+    "references": [
+        "com.unity.burst",
+        "com.unity.collections",
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+    ],
+    "noEngineReferences": false
+}
