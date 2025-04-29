@@ -2,7 +2,7 @@
     "name": "joe.commoncode",
     "references": [
         "com.unity.burst",
-        "com.unity.collections",
+        "com.unity.collections"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

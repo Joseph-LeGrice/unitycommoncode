@@ -1,8 +1,6 @@
 {
-    "name": "joe.commoncode",
+    "name": "joe.commoncode.editor",
     "references": [
-        "com.unity.burst",
-        "com.unity.collections",
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
