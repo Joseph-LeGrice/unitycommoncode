@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 571ac65ca29ff6e44b649e29ef3d9da4, type: 3}
+  m_Name: DefaultTextureArrayGenerator
+  m_EditorClassIdentifier: 
+  m_textureArrayPath: Assets/_Common/VoxelWorld/Visuals/TerrainTextures
+  m_allTerrainTypes:
+  - m_mainTexture: {fileID: 2800000, guid: 58292f517ca2b2448beb5c13a11452ed, type: 3}
+    m_normalMap: {fileID: 2800000, guid: 36ac33f397b4e96408b18b8b70518c46, type: 3}
+    m_ambientOcclusionMap: {fileID: 2800000, guid: bdfaf451a9c3b444fb0e351b1c2fba30, type: 3}
+    m_specularMap: {fileID: 2800000, guid: 5485addbbd4f8074f80cada294a7674d, type: 3}
+  - m_mainTexture: {fileID: 2800000, guid: a6b5692faa961fb408f8a29bba370a81, type: 3}
+    m_normalMap: {fileID: 2800000, guid: 21a04622a173d1f48b7d27f3fd0d7b1e, type: 3}
+    m_ambientOcclusionMap: {fileID: 2800000, guid: f3253862b69441a41b7b7f0f3071d44b, type: 3}
+    m_specularMap: {fileID: 2800000, guid: 63ae929dc991af94c92819e8be25579a, type: 3}
