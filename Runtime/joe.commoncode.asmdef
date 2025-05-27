@@ -1,7 +1,7 @@
 {
     "name": "joe.commoncode",
-    "references": [
-    ],
+    "rootNamespace": "",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -9,7 +9,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [
-    ],
+    "versionDefines": [],
     "noEngineReferences": false
 }
