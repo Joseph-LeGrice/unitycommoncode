@@ -5,7 +5,7 @@ using Unity.Transforms;
 
 public static class PhysicsHelpers
 {
-    private static quaternion GetFromToRotation(float3 from , float3 to)
+    public static quaternion GetFromToRotation(float3 from , float3 to)
     {
         from = math.normalize(from);
         to = math.normalize(to);
