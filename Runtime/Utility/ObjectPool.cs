@@ -110,7 +110,7 @@ public class GameObjectPool : IDisposable
         int pooledIndex = m_pooledObjects.IndexOf(obj);
         if (pooledIndex > -1)
         {
-            m_pooledObjects.RemoveAt(activeIndex);
+            m_pooledObjects.RemoveAt(pooledIndex);
         }
     }
 
