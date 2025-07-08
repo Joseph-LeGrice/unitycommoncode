@@ -5,16 +5,6 @@ using Unity.Transforms;
 
 public static class PhysicsHelpers
 {
-    public static quaternion GetFromToRotation(float3 from , float3 to)
-    {
-        from = math.normalize(from);
-        to = math.normalize(to);
-        
-        float angle = math.acos(math.clamp(math.dot(from, to), -1f, 1f));
-        float3 axis = math.cross(from, to);
-        return quaternion.AxisAngle(axis, angle);
-    }
-    
     public static float3 GetAngularVelocityFromToRotation(float deltaTime, float maxSpeed, in PhysicsMass physicsMass, quaternion from, quaternion to)
     {
         float3 fromForward = new float3(0.0f, 0.0f, 1.0f);
@@ -27,8 +17,8 @@ public static class PhysicsHelpers
         float3 toUp = new float3(0.0f, 1.0f, 0.0f);
         toUp = math.mul(to, toUp);
         
-        quaternion forwardRotation = GetFromToRotation(fromForward, toForward);
-        quaternion upRotation = GetFromToRotation(fromUp, toUp);
+        quaternion forwardRotation = MathHelpers.GetFromToRotation(fromForward, toForward);
+        quaternion upRotation = MathHelpers.GetFromToRotation(fromUp, toUp);
         quaternion finalRotation = math.mul(forwardRotation, upRotation);
             
         float3 angularVelocity = float3.zero;
