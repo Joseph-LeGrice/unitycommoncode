@@ -40,7 +40,7 @@ public struct AssetLookup : IComponentData  // Workaround for WeakObjectReferenc
 
 public abstract class BlobAssetScriptableObject<T> : ScriptableObject where T : unmanaged
 {
-    protected abstract void PopulateBlob(IBaker baker, BlobBuilder builder, ref T blobData);
+    protected abstract void PopulateBlob(IBaker baker, ref BlobBuilder builder, ref T blobData);
 
     protected static Hash128 RegisterAssetReference(IBaker baker, Object asset) // Workaround for WeakObjectReference<Object> not available in blobs yet - dodgy 
     {
@@ -64,7 +64,7 @@ public abstract class BlobAssetScriptableObject<T> : ScriptableObject where T : 
             BlobBuilder builder = new BlobBuilder(Allocator.Temp);
             
             ref T blobData = ref builder.ConstructRoot<T>();
-            PopulateBlob(baker, builder, ref blobData);
+            PopulateBlob(baker, ref builder, ref blobData);
             result = builder.CreateBlobAssetReference<T>(Allocator.Persistent);
             
             builder.Dispose();
